@@ -7,7 +7,6 @@ export default async function Home({searchParams}) {
       throw new Error('Failed to fetch');
     }
     const data = await res.json();
-    console.log(data.results);
     return (
         <div>
             <MovieItem data={data.results} />

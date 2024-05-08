@@ -14,7 +14,7 @@ const MovieCard = ({data}) => {
                        className="sm:rounded-t-lg group-hover:opacity-75 transition-opacity duration-300"/>
                 <div className="p-2 flex items-center justify-center flex-col">
                     <p className="line-clamp-2 text-md text-center">{data.overview}</p>
-                    <h2 className="text-lg font-bold truncate">{data.title || data.original_name}</h2>
+                    <h2 className="text-lg font-bold truncate">{data.title || data.name}</h2>
                     <p className="flex items-center justify-center gap-2">
                         {data.release_date || data.first_air_date} - {data.vote_average} <FiThumbsUp/>
                     </p>

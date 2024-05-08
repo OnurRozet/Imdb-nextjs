@@ -9,7 +9,6 @@ const MoviePage = async ({params}) => {
     }
     const movie = await res.json();
 
-    console.log(movie)
     return (
         <div className="w-full">
           <div className="p-4 md:pt-8 flex flex-col md:flex-row content-center max-w-6xl mx-auto md:space-x-6">
